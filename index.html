@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <i class="bi bi-currency-exchange"></i> Currency Converter
+    </h1>
+    <div class="form">
+      <!-- From Currency Dropdown -->
+      <label for="from-currency">From Currency:</label>
+      <select id="from-currency" aria-label="Select from currency"></select>
+
+      <!-- To Currency Dropdown -->
+      <label for="to-currency">To Currency:</label>
+      <select id="to-currency" aria-label="Select to currency"></select>
+
+      <!-- Amount Input -->
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" min="1" required aria-required="true" aria-label="Enter amount">
+
+      <!-- Convert Button -->
+      <button id="convert-btn" aria-label="Convert currency">
+        <i class="bi bi-currency-exchange"></i> Convert
+      </button>
+    </div>
+
+    <!-- Result Display -->
+    <div id="result" aria-live="polite">Converted Amount: -</div>
+
+    <!-- Section to display  conversion history -->
+    <h2>Conversion History</h2>
+    <ul id="stored-conversions"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
