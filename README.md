@@ -1,6 +1,6 @@
 
 # live sever 
-https://edith123125.github.io/Currency-Converter/ 
+https://edith123125.github.io/Currency-Converter/
 
 # Currency-Converter
 -The Currency Converter Application is a user-friendly web tool that allows users to perform real-time currency conversions using live exchange rates from the ExchangeRate-API. The application also includes features for managing conversion histories directly in the browser using local storage.
